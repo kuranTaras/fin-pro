@@ -1,0 +1,41 @@
+
+
+// global elements
+@import "global/global";
+@import "global/header";
+@import "global/text";
+@import "global/footer";
+@import "global/menu";
+
+
+// home page
+@import "home/hero";
+@import "home/rating";
+@import "home/top";
+@import "home/news";
+@import "home/all";
+@import "home/best";
+
+
+// casino page
+@import "casino/casino";
+@import "casino/login";
+@import "casino/table";
+@import "casino/reviews";
+
+
+// reviews page
+@import "reviews/real";
+@import "reviews/add";
+
+
+// article page
+@import "article/article";
+
+
+// blog page
+@import "blog/blog";
+
+
+// error page
+@import "errorPage/err";

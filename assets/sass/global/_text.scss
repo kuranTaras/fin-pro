@@ -1,0 +1,13 @@
+.text {
+  padding: 10px 0;
+  p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    @media (max-width: 759px) {
+      font-size: 14px;
+    }
+  }
+}

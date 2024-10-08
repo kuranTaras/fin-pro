@@ -1,0 +1,94 @@
+.hero {
+  background: rgba(0, 209, 255, 0.10);
+  backdrop-filter: blur(15px);
+  .container {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  h1 {
+    background: linear-gradient(114deg, #FFF 0%, #BFF3FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    max-width: 755px;
+    line-height: 130%;
+    margin-bottom: 24px;
+    z-index: 1;
+    @media (max-width: 1249px) {
+      font-size: 34px;
+      max-width: 465px;
+    }
+    @media (max-width: 759px) {
+      font-size: 22px;
+      margin-top: 100px;
+    }
+    strong {
+      font-weight: inherit;
+      background: linear-gradient(114deg, #FFF 0%, #BFF3FF 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 700;
+      max-width: 755px;
+      line-height: 130%;
+      position: relative;
+      @media (max-width: 1249px) {
+        font-size: 34px;
+      }
+      @media (max-width: 759px) {
+        font-size: 22px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: 2px;
+        height: 4px;
+        background: linear-gradient(171deg, #BA20D4 0%, #435EDB 100%);
+      }
+    }
+  }
+  .container > h1, .container > p {
+    padding: 0 40px;
+    @media (max-width: 1249px) {
+      padding: 0;
+    }
+  }
+  .container > p {
+    color: #FFF;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    position: relative;
+    z-index: 2;
+    @media (max-width: 759px) {
+      font-size: 14px;
+    }
+  }
+  &-img {
+    position: absolute;
+    top: -36px;
+    right: 140px;
+    @media (max-width: 1249px) {
+      right: 0;
+    }
+    @media (max-width: 999px) {
+      width: 200px;
+      top: 0;
+      right: 40px;
+    }
+    @media (max-width: 759px) {
+      right: 0;
+    }
+  }
+}

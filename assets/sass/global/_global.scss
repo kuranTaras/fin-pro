@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1350px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: 759px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1C1C1C;
+  scroll-behavior: smooth;
+}
+.btn-blue {
+  height: 40px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition-duration: .4s;
+    height: 100%;
+  }
+  &:before {
+    background: linear-gradient(338deg, #73FFD8 0%, #00D1FF 100%);
+  }
+  &:after {
+    border-radius: 10px;
+    background: linear-gradient(314deg, #0D7ADE 0%, #BA1FD3 100%);
+    box-shadow: 0px 1px 4px 0px rgba(69, 93, 219, 0.30), 2px 0px 4px 0px rgba(174, 39, 213, 0.30);
+    opacity: 0;
+  }
+  span {
+    color: #023B5B;
+    position: relative;
+    z-index: 3;
+    transition-duration: .4s;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &:hover {
+    span {
+      color: #fff;
+    }
+    &:after {
+      opacity: 1;
+    }
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+.swiper-pagination {
+  position: static;
+  margin: 20px auto 0 auto;
+  &-bullet {
+    width: 30px;
+    height: 3px;
+    opacity: 1;
+    background-color: #CDCDCD;
+    margin: 0!important;
+    border-radius: 5px;
+    @media (max-width: 759px) {
+      width: 10px;
+      height: 2px;
+    }
+    &-active {
+      background-color: #00D1FF;
+    }
+    &:not(:last-child) {
+      margin-right: 14px!important;
+      @media (max-width: 759px) {
+        margin-right: 7px!important;
+      }
+    }
+  }
+}
+.wpcf7-response-output {
+  display: none!important;
+}
+.screen-reader-text {
+  display: none;
+}

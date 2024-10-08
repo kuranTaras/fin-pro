@@ -1,0 +1,45 @@
+.blog {
+  padding: 50px 0 0 0;
+  &-title {
+    color: #00D1FF;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    a, span {
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      color: #73FFD7;
+      cursor: pointer;
+      transition-duration: .4s;
+      border: 1px solid #73FFD7;
+      text-decoration: none;
+      margin-right: 30px;
+      svg {
+        path {
+          fill: #73FFD7;
+          transition-duration: .4s;
+        }
+      }
+      &:hover, &.current {
+        background: #73FFD7;
+        color: #1C1C1C;
+        path {
+          fill: #1C1C1C;
+        }
+      }
+    }
+  }
+}
